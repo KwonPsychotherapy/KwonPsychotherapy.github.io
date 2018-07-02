@@ -12,13 +12,15 @@
     padding-bottom:66.25%;
     position:relative;
     height:0;
+    text-align: center;
 }
 .map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
+    margin-left:12.5%;
+    display: block;
+    height:75%;
+    width:75%;
     position:absolute;
+
 }
 
 html, body, div, span, applet, object,
@@ -2181,12 +2183,12 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			border-radius: 0;
 			overflow: hidden;
 		}
 
 			.image.avatar img {
-				border-radius: 100%;
+				border-radius: 0;
 				display: block;
 				width: 100%;
 				border: solid;
@@ -2732,7 +2734,7 @@ input, select, textarea {
 			#header > header .avatar {
 				display: block;
 				margin: 0 auto 2.25em auto;
-				width: 8em;
+				width: 10em;
 			}
 
 			#header > header h1 {
