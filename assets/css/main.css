@@ -2692,7 +2692,7 @@ input, select, textarea {
 	#main {
 		margin-left:  max(22%, 330px);
 		margin-right: 5%;
-		padding: 6em 2em 4em 6em;
+		padding: 4em 2em 3em 6em;
 		width: calc(100% - max(22%, 330px) - 5%);
 	}
 
@@ -3063,7 +3063,7 @@ input, select, textarea {
 			#main {
 				margin-left: max(30%, 320px);
 				max-width: none;
-				padding: 6em 4em 4em 4em;
+				padding: 4em 4em 3em 4em;
 				width: calc(100% - max(30%, 320px));
 			}
 
@@ -3145,7 +3145,7 @@ input, select, textarea {
 
 			#main {
 				margin: 0;
-				padding: 6em 4em;
+				padding: 4em 4em;
 				width: 100%;
 			}
 
