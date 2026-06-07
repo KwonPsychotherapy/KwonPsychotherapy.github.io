@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kwon Psychotherapy | Cupertino, CA</title>
+<meta name="description" content="Licensed Clinical Psychologist in Cupertino, CA. Compassionate psychotherapy for children, adolescents, adults, and families. Available in English and Korean.">
+<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+<link rel="manifest" href="../images/favicon/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --cream: #F7F4EE;
+    --cream-dark: #EDE9E1;
+    --sage: #8A9E89;
+    --sage-light: #C8D5C7;
+    --sage-mid: #6B8A6A;
+    --sage-dark: #4D6B4C;
+    --sage-deep: #3d5c3c;
+    --warm-brown: #7A6355;
+    --text-dark: #2C2824;
+    --text-mid: #6B6058;
+    --text-light: #9E9590;
+    --border: rgba(138, 158, 137, 0.25);
+    --border-mid: rgba(138, 158, 137, 0.4);
+    --white: #FFFFFF;
+    --shadow-sm: 0 2px 12px rgba(44, 40, 36, 0.06);
+    --shadow-md: 0 4px 24px rgba(44, 40, 36, 0.08);
+    --shadow-lg: 0 8px 40px rgba(44, 40, 36, 0.1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* ===== NAVIGATION ===== */
+  nav {
+    position: sticky;
+    top: 0;
+    background: rgba(247, 244, 238, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--text-dark);
+    white-space: nowrap;
+  }
+
+  .nav-logo span {
+    color: var(--sage-dark);
+    font-style: italic;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 12.5px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+    transition: color 0.2s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--sage-dark);
+  }
+
+  .nav-cta {
+    background: var(--sage-dark) !important;
+    color: white !important;
+    padding: 9px 22px !important;
+    border-radius: 40px !important;
+    font-size: 13px !important;
+    letter-spacing: 0.03em !important;
+    text-transform: none !important;
+    font-weight: 400 !important;
+    transition: background 0.2s ease, transform 0.15s ease !important;
+    white-space: nowrap;
+  }
+
+  .nav-cta:hover {
+    background: var(--sage-deep) !important;
+    transform: translateY(-1px);
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: calc(100vh - 68px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 4rem 6rem 3.5rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+    margin-bottom: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: var(--sage-dark);
+    flex-shrink: 0;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.2rem;
+    font-weight: 300;
+    line-height: 1.12;
+    color: var(--text-dark);
+    margin-bottom: 1.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--sage-dark);
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    color: var(--text-mid);
+    line-height: 1.85;
+    max-width: 430px;
+    margin-bottom: 2.8rem;
+    font-weight: 300;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2.8rem;
+  }
+
+  .btn-primary {
+    background: var(--sage-dark);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    transition: background 0.2s ease, transform 0.15s ease;
+    white-space: nowrap;
+  }
+
+  .btn-primary:hover {
+    background: var(--sage-deep);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    color: var(--text-mid);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+  }
+
+  .btn-secondary::after {
+    content: '→';
+    transition: transform 0.2s ease;
+  }
+
+  .btn-secondary:hover {
+    color: var(--sage-dark);
+  }
+
+  .btn-secondary:hover::after {
+    transform: translateX(3px);
+  }
+
+  .hero-langs {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .lang-label {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-right: 4px;
+  }
+
+  .lang-badge {
+    background: var(--sage-light);
+    color: var(--sage-dark);
+    font-size: 11.5px;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+  }
+
+  /* Hero Right / Photo Area */
+  .hero-right {
+    position: relative;
+    background: var(--sage-light);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image-area {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-circle-bg {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(77, 107, 76, 0.14);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .hero-circle-bg-2 {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: rgba(77, 107, 76, 0.08);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  /* Photo container — swap out .hero-photo-placeholder for an actual <img> when ready */
+  .hero-photo-placeholder {
+    width: 290px;
+    height: 360px;
+    border-radius: 145px 145px 90px 90px;
+    background: linear-gradient(155deg, #c4d3c3 0%, #93ab92 50%, #62826100 100%);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+  }
+
+  /* To use a real photo, replace .hero-photo-placeholder with:
+     <img src="your-photo.jpg" alt="Dr. Yookyung Kwon"
+          style="width:290px;height:360px;object-fit:cover;border-radius:145px 145px 90px 90px;position:relative;z-index:2;">
+  */
+
+  .photo-icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo-icon-circle svg {
+    width: 30px;
+    height: 30px;
+    fill: rgba(255, 255, 255, 0.85);
+  }
+
+  .photo-placeholder-label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Floating stat cards */
+  .hero-stat-card {
+    position: absolute;
+    background: var(--white);
+    border-radius: 18px;
+    padding: 14px 20px;
+    box-shadow: var(--shadow-md);
+    z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+  .stat-card-1 { bottom: 18%; left: -20px; }
+  .stat-card-2 { top: 20%; right: -12px; }
+
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--sage-dark);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-desc {
+    font-size: 11.5px;
+    color: var(--text-light);
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .stat-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--sage);
+    flex-shrink: 0;
+  }
+
+  /* ===== INTRO / APPROACH ===== */
+  .intro-section {
+    background: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    padding: 6rem 3.5rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 1px;
+    background: var(--sage-dark);
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.9rem;
+    font-weight: 300;
+    line-height: 1.18;
+    color: var(--text-dark);
+    margin-bottom: 1.6rem;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--sage-dark);
+  }
+
+  .intro-text p {
+    font-size: 15.5px;
+    color: var(--text-mid);
+    line-height: 1.9;
+    margin-bottom: 1.3rem;
+    font-weight: 300;
+  }
+
+  .intro-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .approach-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .approach-pill {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--cream);
+    border-radius: 60px;
+    padding: 13px 20px;
+    border: 1px solid var(--border);
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+
+  .approach-pill:hover {
+    border-color: var(--border-mid);
+    background: var(--cream-dark);
+  }
+
+  .pill-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--sage-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+  }
+
+  .approach-pill:hover .pill-icon {
+    background: #b3c8b2;
+  }
+
+  .pill-icon svg {
+    width: 17px;
+    height: 17px;
+    stroke: var(--sage-dark);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .pill-text {
+    font-size: 14px;
+    color: var(--text-dark);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  /* ===== SERVICES ===== */
+  .services-section {
+    background: var(--cream);
+    padding: 6rem 3.5rem;
+  }
+
+  .services-header {
+    max-width: 520px;
+    margin-bottom: 3.5rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 2.2rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: var(--sage-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+    transition: background 0.2s ease;
+  }
+
+  .service-card:hover .service-icon {
+    background: #b3c8b2;
+  }
+
+  .service-icon svg {
+    width: 23px;
+    height: 23px;
+    stroke: var(--sage-dark);
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .service-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.01em;
+  }
+
+  .service-desc {
+    font-size: 13.5px;
+    color: var(--text-mid);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  /* ===== ABOUT ===== */
+  .about-section {
+    background: var(--sage-dark);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+    padding: 6rem 3.5rem;
+  }
+
+  .about-section .section-label {
+    color: var(--sage-light);
+  }
+
+  .about-section .section-label::before {
+    background: var(--sage-light);
+  }
+
+  .about-section .section-title {
+    color: white;
+  }
+
+  .about-section .section-title em {
+    color: var(--sage-light);
+  }
+
+  .about-text p {
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.9;
+    font-weight: 300;
+    font-size: 15.5px;
+    margin-bottom: 1.1rem;
+  }
+
+  .about-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cred-section-label {
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sage-light);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    opacity: 0.85;
+  }
+
+  .cred-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .cred-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 15px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.2s ease;
+  }
+
+  .cred-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .cred-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--sage-light);
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+
+  .cred-org {
+    font-size: 13.5px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 3px;
+  }
+
+  .cred-role {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.48);
+    font-weight: 300;
+  }
+
+  .cred-block + .cred-block {
+    margin-top: 2rem;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-section {
+    background: var(--white);
+    text-align: center;
+    padding: 7rem 3.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .contact-section .section-label {
+    justify-content: center;
+  }
+
+  .contact-section .section-label::before {
+    display: none;
+  }
+
+  .contact-section .section-title {
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .contact-sub {
+    color: var(--text-mid);
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 3.5rem;
+    font-weight: 300;
+    line-height: 1.85;
+  }
+
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .contact-card {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 2.2rem 1rem;
+    text-align: center;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .contact-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .contact-card-icon {
+    width: 46px;
+    height: 46px;
+    background: var(--sage-light);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.1rem;
+  }
+
+  .contact-card-icon svg {
+    width: 21px;
+    height: 21px;
+    stroke: var(--sage-dark);
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .contact-card-label {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-light);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+
+  .contact-card-value {
+    font-size: 14px;
+    color: var(--text-dark);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .contact-card-value a {
+    color: var(--sage-dark);
+    transition: color 0.2s ease;
+  }
+
+  .contact-card-value a:hover {
+    color: var(--sage-deep);
+  }
+
+  .contact-big-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--sage-dark);
+    color: white;
+    padding: 18px 38px;
+    border-radius: 60px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+
+  .contact-big-btn:hover {
+    background: var(--sage-deep);
+    transform: translateY(-2px);
+  }
+
+  .contact-big-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: white;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+  }
+
+  .contact-note {
+    margin-top: 1.8rem;
+    font-size: 13px;
+    color: var(--text-light);
+    font-weight: 300;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--text-dark);
+    color: rgba(255, 255, 255, 0.45);
+    padding: 2.2rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 300;
+    letter-spacing: 0.03em;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+  }
+
+  .footer-links a {
+    color: rgba(255, 255, 255, 0.38);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    transition: color 0.2s ease;
+  }
+
+  .footer-links a:hover {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    nav {
+      padding: 0 1.5rem;
+    }
+
+    .nav-links {
+      gap: 1rem;
+    }
+
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+
+    .hero-left {
+      padding: 4rem 1.5rem 3rem;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+    }
+
+    .hero-right {
+      min-height: 400px;
+      order: -1;
+    }
+
+    .hero-stat-card {
+      display: none;
+    }
+
+    .intro-section,
+    .about-section {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      padding: 4rem 1.5rem;
+    }
+
+    .services-section,
+    .services-grid {
+      padding: 4rem 1.5rem;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+      padding: 5rem 1.5rem;
+    }
+
+    footer {
+      padding: 2rem 1.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .section-title {
+      font-size: 2.3rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .nav-links li:not(:last-child) {
+      display: none;
+    }
+
+    .hero-title {
+      font-size: 2.6rem;
+    }
+
+    .hero-left {
+      padding: 3rem 1.25rem 2.5rem;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+    }
+
+    .contact-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-logo">
+    Yookyung Kwon, Ph.D. &nbsp;·&nbsp; <span>Licensed Psychologist</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="kr/index.html">한국어 (KR)</a></li>
+    <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <h1 class="hero-title">
+      Professional care<br>for your <em>emotional</em><br>wellbeing.
+    </h1>
+    <p class="hero-sub">
+      Compassionate psychotherapy for children, adolescents, adults, and families. Together we explore what you're contending with and chart a path forward.
+    </p>
+    <div class="hero-actions">
+      <a href="mailto:kwonpsychotherapy@gmail.com" class="btn-primary">Email for Consultation</a>
+      <a href="#approach" class="btn-secondary">Learn about my approach</a>
+    </div>
+    <div class="hero-langs">
+      <span class="lang-label">Available in</span>
+      <span class="lang-badge">English</span>
+      <a href="kr/index.html" class="lang-badge">한국어</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-image-area">
+      <div class="hero-circle-bg"></div>
+      <div class="hero-circle-bg-2"></div>
+
+      <!--
+        PHOTO: Circular frame that fits the background composition
+      -->
+      <div style="position: relative; z-index: 2; width: 340px; height: 340px; border-radius: 50%; overflow: hidden; border: 8px solid var(--white); box-shadow: var(--shadow-lg);">
+        <img src="../images/avatar.jpg" alt="Dr. Yookyung Kwon"
+             style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+
+      <div class="hero-stat-card" style="top: 12%; right: -10px; text-align: left; min-width: 240px;">
+        <div class="stat-num" style="font-size: 19px; margin-bottom: 8px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">Ph.D. &bull; Cornell University</div>
+        <div class="stat-desc" style="color: var(--sage-dark); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px;">Licensed Psychologist</div>
+        <div class="stat-desc" style="font-size: 12px;">Cupertino, CA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH / PHILOSOPHY -->
+<section class="intro-section" id="approach">
+  <div class="intro-text">
+    <div class="section-label">My Philosophy</div>
+    <h2 class="section-title">Meeting you<br><em>where you are</em></h2>
+    <p>Are you suffering emotionally? Are you having trouble functioning at work or in your relationships?</p>
+    <p>My goal is to understand what you are struggling with and together, over time, we will figure out what you need. It can be hard to look at oneself due to feelings of fear, shame, and guilt. I will be very interested in understanding what you are contending with, and will strive to help you. I have many tools that can be helpful for understanding yourself and conducting your therapy.</p>
+    <p>In therapy, I will treat you with empathy, genuineness, respect and non-judgmental regard. We will work as a team to understand and deal with your challenges. I will expect you to actively engage in the therapy process. When we encounter difficulties and obstacles during the process, I will do my best to help you overcome them so that your goals can be realized.</p>
+    <p>I would like to work with you to help you achieve higher functioning, grow your potential, and feel happy with your life. People grow as a result of experiencing mistakes and failures, often from emotional pain. I will strive to help you navigate your challenges with emotional poise. I hope that you will be able to make positive changes to your life as result of the therapy process.</p>
+  </div>
+
+  <div class="approach-pills" aria-label="Therapeutic approaches">
+    <div class="approach-pill">
+      <div class="pill-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+      </div>
+      <span class="pill-text">Psychodynamic Perspective</span>
+    </div>
+    <div class="approach-pill">
+      <div class="pill-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+      </div>
+      <span class="pill-text">Cognitive Behavioral Therapy (CBT)</span>
+    </div>
+    <div class="approach-pill">
+      <div class="pill-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <span class="pill-text">Interpersonal &amp; Developmental</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="services-header">
+    <div class="section-label">What I Offer</div>
+    <h2 class="section-title">Services</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </div>
+      <div class="service-title">Entering Therapy</div>
+      <p class="service-desc">Initially we would meet to clarify your current issues prior to discussing a potential treatment plan. In other words, assessment precedes treatment. Of course, if you are in crisis when you come to see me, that would be the highest priority.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="service-title">Scheduling Therapy</div>
+      <p class="service-desc">We will meet often enough for the treatment to be effective, and it is often most helpful to regularly schedule appointments.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+      </div>
+      <div class="service-title">Fees and Insurance</div>
+      <p class="service-desc">I am happy to discuss my fees and fee policy on the phone or at our initial meetings. I will bill you directly. I am not contracted with any insurance company as an in-network provider. If your insurance policy covers out-of-network services, my statement will provide enough information for you to submit a claim to your insurance company so that they can reimburse your therapy. In any case, I will need to receive payment from you directly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / CREDENTIALS -->
+<section class="about-section" id="about">
+  <div class="about-text">
+    <div class="section-label">Background</div>
+    <h2 class="section-title">About <em>Dr. Kwon</em></h2>
+    <p>I am licensed in California as a Clinical Psychologist. I work with children, adolescents, adults, and families. I can work either in English or in Korean, and am accepting all genders, ethnicities, religions, sexual orientations, and gender identities.</p>
+  </div>
+
+  <div>
+    <div class="cred-block">
+      <div class="cred-section-label">Clinical Experience</div>
+      <ul class="cred-list">
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">Richmond Area Multi-Services (RAMS), Inc.</div>
+            <div class="cred-role">Mental Health Counselor &amp; Staff Psychologist</div>
+          </div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">Psychiatry, Stanford School of Medicine</div>
+            <div class="cred-role">Clinical Internship · Kurt and Barbara Gronowski Clinic</div>
+          </div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">Asian Americans for Community Involvement</div>
+            <div class="cred-role">Behavioral Health Intern · Santa Clara County Mental Health</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cred-block">
+      <div class="cred-section-label">Psychology Research</div>
+      <ul class="cred-list">
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">UC Irvine</div>
+            <div class="cred-role">Dept of Psychology and Social Behavior · Stress &amp; Motivation</div>
+          </div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">Stanford School of Medicine</div>
+            <div class="cred-role">Stanford Geriatric Education Center · Caregiving Stress</div>
+          </div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">Stanford University</div>
+            <div class="cred-role">Lab of Life-Span Development · Emotional Memory</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cred-block">
+      <div class="cred-section-label">Education</div>
+      <ul class="cred-list">
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">San Francisco Center for Psychoanalysis</div>
+            <div class="cred-role">Palo Alto Psychoanalytic Psychotherapy Training Program</div>
+          </div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">California School of Professional Psychology</div>
+            <div class="cred-role">Doctoral Respecialization in Clinical Psychology</div>
+          </div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">Cornell University</div>
+            <div class="cred-role">Ph.D. in Developmental Psychology</div>
+          </div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">Yonsei University</div>
+            <div class="cred-role">Master in Human Development &amp; Family Studies</div>
+          </div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-dot"></div>
+          <div>
+            <div class="cred-org">Yonsei University</div>
+            <div class="cred-role">B.A. in English Language &amp; Literature</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="section-label">Contact</div>
+  <h2 class="section-title">Ready to take the <em>first step?</em></h2>
+  <p class="contact-sub">
+  Before confirming an appointment, I'd like to connect by phone to make sure I'm the right fit for your needs. Please call, email, or leave with a voicemail with a telephone number at which I can call you back.
+  </p>
+
+  <div class="contact-cards">
+    <div class="contact-card">
+      <div class="contact-card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <div class="contact-card-label">Phone</div>
+      <div class="contact-card-value">
+        <a href="tel:6508043035">(650) 804-3035</a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div class="contact-card-label">Email</div>
+      <div class="contact-card-value">
+        <a href="mailto:kwonpsychotherapy@gmail.com">kwonpsychotherapy@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="contact-card-label">Office</div>
+      <div class="contact-card-value">
+        21760 Stevens Creek Blvd<br>Suite 201, Cupertino CA 95014
+      </div>
+    </div>
+  </div>
+
+  <a href="mailto:kwonpsychotherapy@gmail.com" class="contact-big-btn">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    Email Dr. Kwon
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Yookyung Kwon, Ph.D. &nbsp;·&nbsp; Licensed Psychologist in California</div>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="kr/index.html">한국어</a>
+    <a href="#">&copy; 2026 Kwon Psychotherapy</a>
+  </div>
+</footer>
+
+</body>
+</html>
